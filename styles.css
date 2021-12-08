@@ -1,0 +1,125 @@
+:root {
+  --cell-bg-red: #ff0000;
+  --cell-text-blue: #0000ff;
+  --cell-border: #000000;
+  --btn-bg: #edd2f3;
+  --btn-border: #fff;
+  --btn-text: #516beb;
+  --btn-border-hover: #84dfff;
+  --btn-shadow: #84deff7e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+thead {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+thead > tr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2px;
+}
+thead > tr > td {
+  padding: 10px 48px;
+}
+
+td {
+  padding: 10px 40px;
+  border: 1px solid var(--cell-border);
+}
+
+.red {
+  background-color: var(--cell-bg-red);
+}
+
+.blue_italic {
+  font-style: italic;
+  color: var(--cell-text-blue);
+}
+
+.btn_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#color {
+  width: 125px;
+  height: 30px;
+  background-color: var(--btn-bg);
+  border: solid 1px var(--btn-border);
+  border-radius: 5px;
+  color: var(--btn-text);
+}
+
+#cell-selector {
+  width: 125px;
+  height: 30px;
+  background-color: var(--btn-bg);
+  border: solid 1px var(--btn-border);
+  border-radius: 5px;
+  color: var(--btn-text);
+  outline: none;
+}
+
+.controller {
+  width: 125px;
+  height: 30px;
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  border-radius: 5px;
+  color: var(--btn-text);
+}
+
+.btn-click:hover {
+  border: 1px solid var(--btn-border-hover);
+  box-shadow: 0 0 2px 1px var(--btn-shadow);
+}
+.btn-click:focus {
+  box-shadow: 0 0 5px 1px var(--btn-border-hover);
+}
+.btn-click:active {
+  box-shadow: 0 0 2px 1px var(--btn-shadow);
+}
